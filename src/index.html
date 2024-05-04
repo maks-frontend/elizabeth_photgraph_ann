@@ -1,0 +1,147 @@
+<!DOCTYPE >
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elizabeth</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap"
+      rel="stylesheet" />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+  </head>
+
+
+  <body>
+    <header class="header container">
+      <div class="wrapper">
+        <img class="photo-elizabeth" src="./img/elizabeth.png" alt="photo">
+        <ul class="wrapper-link">
+        <li class="link-instagram">
+          <a href="https://instagram.com/e_lisabetha?igshid=NDc0ODY0MjQ="><img src="./img/instagram.svg" alt="instagram"></img></a>
+        </li>
+        <li class="link-telegram">
+          <a href="https://t.me/liza_photo_video"
+            ><img src="./img/telegram.svg" alt="telegram"
+          /></a>
+        </li>
+        </ul>
+      </div>
+    <div class="title">
+        <h1 class="title-main">ВАШІ ОСОБЛИВІ МОМЕНТИ 
+            <span class="title-together">разом з</span> 
+            <div class="title-name">Elisabeta</div></h1>
+      </div>
+    </header>
+    <main>
+        <section class="section-details container">
+            <button onclick="openModal()" class="button-details">
+              <svg class="icon-plus" width="30" height="30">
+                <use href="./img/icons.svg#icon-plus"></use>
+              </svg>
+            </button>
+            <p>детальніше про себе</p>
+
+            <div id="myModal" class="modal-container">
+      <div>
+        <div class="modal-window"><button onclick="closeModal()" class="button-details">
+              <svg class="icon-plus" width="30" height="30">
+                <use href="./img/icons.svg#icon-minus"></use>
+              </svg>
+            </button>
+        <p class="modal-title">детальніше про себе</p></div>
+        
+        <p class="modal-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci sed ipsum veniam dolores unde ducimus vitae commodi reiciendis laboriosam delectus quo laborum corporis, eum rem perspiciatis quia officia ab inventore!</p>
+        </div>
+
+        </section>
+        <section class="container">
+        <ul class="list-buttons">
+          <li class="buttons-link"><button onclick="openOrder()" class="buttons-style">Консультація</button> 
+            <div class="form-container" id="order_form">
+                <form action="maksimrazinkov@gmail.com" method="post">
+                <ul>
+                    <button onclick="closeOrder()" class="button-close">
+              <svg width="15" height="15">
+                <use href="./img/icons.svg#icon-plus"></use>
+              </svg>
+            </button>
+                   <li class="name-user"><label class="name-user-text" for="name">name</label>
+                <input class="inp-user" type="text" id="name" name="name" required></li>
+                <li class="name-user"><label class="name-user-text" for="phone">phone</label>
+                <input class="inp-user" type="tel" id="phone" name="phone" required></li> 
+                </ul>
+  
+                <li class="name-user"><input class="name-user-btn" type="submit" value="Надіслати"></li>
+         </form></div></li>
+            
+          <li class="buttons-link"><a href="https://instagram.com/life_is_1_moment?igshid=NDc0ODY0MjQ="><button class="buttons-style" type="button">Портфоліо</button></a></li>
+          <li class="buttons-link"><button class="buttons-style" onclick="openPrice()">Прайс</button></li>
+          <li class="buttons-link"><button class="buttons-style">Сертифікати</button></li>
+        </ul>
+      </section>
+      
+      <section class="container">
+        <img class="line" src="./img/line.svg" alt="img" />
+        <div class="download-user"><button class="button-download">Скачати Безкоштовно
+          <svg class="icon-right" width="25" height="25">
+            <use href="./img/icons.svg#icon-right"></use>
+          </svg>
+        </button></div>
+        
+        <p class="title-download">топ 5 програм для обробки фото</p>
+
+        <img class="line" src="./img/line.svg" alt="img" />
+      
+      </section>
+     <section class="container section-reviews">
+  <h3 class="reviews">ВІДГУКИ</h3>
+<div class="mySwiper">
+    <div class="swiper-wrapper">
+     <img class="images-rev" src="./img/phrewiews/reviews1.jpg" alt="photo-reviews">
+     <img class="images-rev" src="./img/phrewiews/reviews2.jpg" alt="photo-reviews">
+     <img class="images-rev" src="./img/phrewiews/reviews3.jpg" alt="photo-reviews">
+     <img class="images-rev" src="./img/phrewiews/reviews4.jpg" alt="photo-reviews">
+     <img class="images-rev" src="./img/phrewiews/reviews5.jpg" alt="photo-reviews">
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</section>
+
+    </div>
+    </main>
+    <footer class="container">
+     <img class="line" src="./img/line.svg" alt="img">
+     <ul class="wrapper-link-footer">
+        <li class="link-instagram-footer">
+          <a href="https://instagram.com/e_lisabetha?igshid=NDc0ODY0MjQ="
+            ><img src="./img/instagram.svg" alt="instagram"></img></a>
+        </li>
+        <li class="link-telegram-footer">
+          <a href="https://t.me/liza_photo_video"
+            ><img src="./img/telegram.svg" alt="telegram"
+          /></a>
+        </li>
+        </ul>
+        <div class="footer-link">
+           <p>© 2022</p>
+        <a class="link-ann" href="https://instagram.com/annvalen_designer?igshid=NDc0ODY0MjQ="
+          >ann_valen</a>
+        </div>
+    </footer>
+  </body>
+ 
+</html>
