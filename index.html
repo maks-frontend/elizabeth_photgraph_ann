@@ -88,18 +88,36 @@
          </form></div></li>
             
           <li class="buttons-link"><a href="https://instagram.com/life_is_1_moment?igshid=NDc0ODY0MjQ="><button class="buttons-style" type="button">Портфоліо</button></a></li>
-          <li class="buttons-link"><button class="buttons-style" onclick="openPrice()">Прайс</button></li>
-          <li class="buttons-link"><button class="buttons-style">Сертифікати</button></li>
+          <li class="buttons-link"><button class="buttons-style" onclick="openPrice()">Прайс</button>
+          <div id="myPrice" class="modal-container">
+      <div>
+        <div><button onclick="closePrice()" class="button-close btn">
+              <svg width="15" height="15">
+                <use href="./img/icons.svg#icon-plus"></use>
+              </svg>
+            </button>
+        <p class="modal-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci sed ipsum veniam dolores unde ducimus vitae commodi reiciendis laboriosam delectus quo laborum corporis, eum rem perspiciatis quia officia ab inventore!</p>
+        </div></li>
+          <li class="buttons-link"><button class="buttons-style" onclick="openSertificates()">Сертифікати</button>
+            <div id="mySertificates" class="modal-container">
+      <div>
+        <div><button onclick="closeSertificates()" class="button-close btn">
+              <svg width="15" height="15">
+                <use href="./img/icons.svg#icon-plus"></use>
+              </svg>
+            </button>
+        <p class="modal-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci sed ipsum veniam dolores unde ducimus vitae commodi reiciendis laboriosam delectus quo laborum corporis, eum rem perspiciatis quia officia ab inventore!</p>
+        </div></li>
         </ul>
       </section>
       
       <section class="container">
         <img class="line" src="./img/line.svg" alt="img" />
-        <div class="download-user"><button class="button-download">Скачати Безкоштовно
-          <svg class="icon-right" width="25" height="25">
+        <div class="download-user"><a href="./img/Canon_EOS_800D_Manual_UK.pdf" download><button class="button-download">Скачати Безкоштовно<svg class="icon-right" width="25" height="25">
             <use href="./img/icons.svg#icon-right"></use>
           </svg>
-        </button></div>
+        </button></div></a>
+          
         
         <p class="title-download">топ 5 програм для обробки фото</p>
 
@@ -108,7 +126,7 @@
       </section>
      <section class="container section-reviews">
   <h3 class="reviews">ВІДГУКИ</h3>
-<div class="mySwiper">
+<div id="swiper" class="swiper">
     <div class="swiper-wrapper">
      <img class="images-rev" src="./img/phrewiews/reviews1.jpg" alt="photo-reviews">
      <img class="images-rev" src="./img/phrewiews/reviews2.jpg" alt="photo-reviews">
@@ -116,7 +134,6 @@
      <img class="images-rev" src="./img/phrewiews/reviews4.jpg" alt="photo-reviews">
      <img class="images-rev" src="./img/phrewiews/reviews5.jpg" alt="photo-reviews">
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 
 </section>
